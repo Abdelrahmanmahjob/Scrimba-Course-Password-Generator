@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    background: #1C1C1C;
+    color: white;
+    padding-inline: 50px;
+}
+
+.generate-passwords {
+    background: #1F2937;
+    padding: 25px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 5px 5px 10px black,6px 6px 0px white;
+}
+
+span {
+    color: #4ADF86; 
+}
+
+p {
+    color: #D5D4D8;
+    font-style: italic;
+}
+
+form {
+    margin-block: 20px;
+}
+.length-label {
+    color: #4ADF86;
+    span {
+        color: white;
+    }
+}
+#length {
+    width: 50%;
+    background: transparent;
+    color: white;
+    padding: 6px 6px;
+}
+#length:focus {
+    outline: none;
+}
+#error-message {
+    color: red;
+}
+
+.add {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background: #10B981;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: none;
+    transition: .3s;
+}
+button:hover {
+    box-shadow: 3px 3px 5px black;
+}
+button:focus {
+    outline: none;
+}
+
+.passwords-aria {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.passwords {
+    display: flex;
+    button {
+        color: #2F3E53;
+        border-radius: 0;
+        transition: .3s;
+        &:hover {
+            color: #1C1C1C;
+            background: #55F991;
+            scale: 1.1;
+            box-shadow: 2px 2px 5px gray;
+        }
+    }
+
+}
+#password-1 , #password-2 {
+    min-width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background: #2F3E53;   
+    color: #55F991;
+    text-align: center;
+}
